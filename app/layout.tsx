@@ -8,6 +8,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+        <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/opengraph-image.png"
+    />
+      <title>Acme Dc</title>
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
