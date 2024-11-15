@@ -1,7 +1,14 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
+import { Metadata } from 'next';
 
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Acme Dashboard',
+    default: 'Acme Dashboard',
+  },
+};
 // export const experimental_ppr = true;
- 
+
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
